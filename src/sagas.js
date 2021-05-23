@@ -1,5 +1,5 @@
 
-import { call, put, takeEvery, all, takeLatest, select } from 'redux-saga/effects'
+import { call, put, takeEvery, all, } from 'redux-saga/effects'
 import { types, fetchUsersSuccess, fetchUsersFail } from './actions'
 import axios from 'axios';
 
