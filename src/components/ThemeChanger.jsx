@@ -27,8 +27,8 @@ class ThemeChanger extends Component {
                     onChange={this.handleChange}
                     name="themeSelected"
                 >
-                    <option value="light">{this.props.language === 'es' ? "diurno" : "light"}</option>
-                    <option value="dark">{this.props.language === 'es' ? "nocturno" : "dark"}</option>
+                    <option value="light">{this.props.language === 'es' ? "Claro" : "Light"}</option>
+                    <option value="dark">{this.props.language === 'es' ? "Nocturno" : "Dark"}</option>
                 </select>
                 <ThemeContext.Provider value={this.state.theme} >
                     {this.props.children}
