@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import LanguageContext from '../contexts/LanguageContext'
+import LanguageContext from '../contexts/LanguageContext';
 
 class LanguageChanger extends Component {
     constructor(props) {
@@ -18,7 +18,7 @@ class LanguageChanger extends Component {
 
     render() {
         return (
-            <div style={{ margin: '10px' }}>
+            <div>
                 <select
                     value={this.state.language}
                     onChange={this.handleChange}

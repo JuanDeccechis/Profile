@@ -1,5 +1,10 @@
-.App {
-  text-align: center;
+@import './styles/variables.css';
+
+.app {
+  padding: 5% 10%;
+  background-color: var(--theme-page-background);
+  color: var(--theme-page-text);
+  border-radius: 100px;
 }
 
 html{
@@ -7,8 +12,14 @@ html{
   padding: 5% 10%;
 }
 
+h1{
+  text-align: center;
+}
+
 h2{
   text-decoration: underline;
+  margin: 0;
+  margin-top: 40px;
 }
 
 p{
@@ -37,19 +48,28 @@ p{
 }
 
 .img-profile{
-  background-image: url("./images/me.png");;
+  background-image: url("./images/me.png");
+  border-radius: 14px;
 }
 
 .img-user{
-  background-image: url("./images/user.svg");;
+  background-image: url("./images/user.svg");
 }
 
 .img-mail{
-  background-image: url("./images/mail.svg");;
+  background-image: url("./images/mail.svg");
 }
 
 .img-phone{
-  background-image: url("./images/phone.svg");;
+  background-image: url("./images/phone.svg");
+}
+
+.img-linkedIn1{
+  background-image: url("./images/linkedin.svg");
+}
+
+.img-linkedIn2{
+  background-image: url("./images/linkedin-editado.svg");
 }
 
 .presentation{
@@ -69,7 +89,7 @@ p{
 
 .short-column{
   width: 30%;
-  border-bottom: 2px solid #666D7A;
+  border-bottom: 2px solid var(--theme-page-block);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -77,9 +97,15 @@ p{
 
 .long-column{
   width: 70%;
-  border-bottom: 2px solid #666D7A;
+  border-bottom: 2px solid var(--theme-page-block);
 }
 
 .outstanding{
   font-weight: bold;
+}
+
+.list-items{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

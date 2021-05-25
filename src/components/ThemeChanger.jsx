@@ -1,35 +1,40 @@
 import React, { Component } from 'react';
 
-import { themes } from '../contexts/ThemeContext';
-import ThemeContext from '../contexts/ThemeContext'
+import ThemeContext from '../contexts/ThemeContext';
+import '../styles/switcher.css';
 
 class ThemeChanger extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            theme: themes.light,
-            themeSelected: "light"
+            theme: 'dark',
+            switchDark: true
         };
         this.handleChange = this.handleChange.bind(this);
+        this.handleSwitch = this.handleSwitch.bind(this);
     }
+    
     handleChange(event) {
         const value = event.target.value;
         const field = event.target.name;
-        this.setState({ [field]: value, theme: themes[value] });
+        this.setState({ [field]: value });
+    }
 
+    handleSwitch(event){
+        let newTheme = this.state.switchDark ? 'light' : 'dark';
+        this.setState({ switchDark: !this.state.switchDark, theme: newTheme });
     }
 
     render() {
         return (
-            <div style={{ margin: '10px' }}>
-                <select
-                    value={this.state.themeSelected}
-                    onChange={this.handleChange}
-                    name="themeSelected"
-                >
-                    <option value="light">{this.props.language === 'es' ? "Claro" : "Light"}</option>
-                    <option value="dark">{this.props.language === 'es' ? "Nocturno" : "Dark"}</option>
-                </select>
+            <div>
+                <div className="container-switcher">
+                    <span className="label-switcher">{this.props.language === 'es' ? 'modo nocturno' : 'dark mode' }: </span>
+                    <label class="switch">
+                        <input type="checkbox" checked={this.state.switchDark} onChange={this.handleSwitch} />
+                        <span class="slider round"></span>
+                    </label>
+                </div>
                 <ThemeContext.Provider value={this.state.theme} >
                     {this.props.children}
                 </ThemeContext.Provider>

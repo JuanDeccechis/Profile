@@ -1,0 +1,18 @@
+.light {
+    --theme-color          : #A80000;
+    --theme-page-background: #FFFFFF;
+    --theme-page-text      : #131F33;
+    --theme-page-primary   : #0005FF;
+}
+
+.dark {
+    --theme-color          : #A80000;
+    --theme-page-background: #131F33;
+    --theme-page-text      : #FFFFFF;
+    --theme-page-primary   : #BBD0FF;
+}
+
+#root {
+    --theme-page-block     : #666D7A;
+    --theme-page-icon      : #25AE88;
+}
