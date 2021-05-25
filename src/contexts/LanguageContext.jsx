@@ -1,5 +1,16 @@
 import React from 'react';
 
-const LanguageContext = React.createContext('es');
+export const LanguageContext = React.createContext('es');
 
-export default LanguageContext;
+export function withLanguage(Component) {
+    return function LanguagedComponent(props) {
+        return (
+            <LanguageContext.Consumer>
+                {
+                    language =>
+                        <Component { ...props } language = { language } />
+                }
+            </LanguageContext.Consumer>
+        )
+    }
+}

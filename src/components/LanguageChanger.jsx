@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import LanguageContext from '../contexts/LanguageContext';
+import { LanguageContext } from '../contexts/LanguageContext';
 
 class LanguageChanger extends Component {
     constructor(props) {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import ThemeContext from '../contexts/ThemeContext';
+import { ThemeContext } from '../contexts/ThemeContext';
 import '../styles/switcher.css';
 
 class ThemeChanger extends Component {
@@ -10,16 +10,9 @@ class ThemeChanger extends Component {
             theme: 'dark',
             switchDark: true
         };
-        this.handleChange = this.handleChange.bind(this);
         this.handleSwitch = this.handleSwitch.bind(this);
     }
     
-    handleChange(event) {
-        const value = event.target.value;
-        const field = event.target.name;
-        this.setState({ [field]: value });
-    }
-
     handleSwitch(event){
         let newTheme = this.state.switchDark ? 'light' : 'dark';
         this.setState({ switchDark: !this.state.switchDark, theme: newTheme });

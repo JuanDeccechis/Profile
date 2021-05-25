@@ -6,8 +6,8 @@ class Contact extends Component {
         return (
             <div>
 
-            <div className="img img-linkedIn1"></div>
-            <div className="img img-linkedIn2"></div>
+            <div className="img short-img img-linkedIn"></div>
+            <div className="img short-img img-github"></div>
             <ul className="contact">
                 <li>
                     <ActionLink to="https://github.com/JuanDeccechis" linkText="Github" />
