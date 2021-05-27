@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Contact from './components/Contact';
-import Home from './pages/Home';
+import Curriculum from './pages/Curriculum';
 import Presentation from './components/Presentation';
 import './App.css';
 
@@ -24,7 +24,7 @@ class App extends Component {
                         theme => (
                           <div>
                             <Presentation/>
-                            <Home/>
+                            <Curriculum/>
                             <Contact/>
                           </div>
                         )
