@@ -11,8 +11,9 @@ const PDFStyles = {
     backgroundColor: '#FF0000',
     width: '210mm',
     minHeight: '297mm',
-    marginLeft: 'auto',
-    marginRight: 'auto'
+    marginLeft: '10mm',
+    marginRight: 'auto',
+    marginTop: '15mm'
 }
 
 class Home extends Component {

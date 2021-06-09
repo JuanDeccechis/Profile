@@ -26,10 +26,10 @@ class Curriculum extends Component {
                 <Topic title="Aptitudes" rol="Proactivo, Responsable, Trabajo en equipo"></Topic>
                 <Topic title="Conocimientos"></Topic>
                 <div className="list-items">
-                    <Topic rol="React - TS - JS ES6 - JS"></Topic>
-                    <Topic rol="SASS - CSS3 - CSS"></Topic>
-                    <Topic rol="HTML5 - HTML"></Topic>
-                    <Topic rol="JAVA"></Topic>
+                    <Topic rol="React - TS - JS "></Topic>
+                    <Topic rol="SASS - CSS3 - CSS "></Topic>
+                    <Topic rol="HTML5 - HTML "></Topic>
+                    <Topic rol="JAVA "></Topic>
                     <Topic rol="BD Oracle SQL"></Topic>
                 </div>
             </div>
