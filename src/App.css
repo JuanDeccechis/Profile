@@ -7,7 +7,7 @@ div:not(.img, .user-information), span{
 div.app {
   padding: 2% 5%;
   width: 70%;
-  
+  margin: auto;
   background-color: var(--theme-page-background);
   color: var(--theme-page-text);
   border-radius: 100px;

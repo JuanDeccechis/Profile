@@ -6,35 +6,29 @@ import Curriculum from '../components/Curriculum';
 import { jsPDF } from "jspdf";
 import html2canvas from 'html2canvas';
 import reducer from "../reducer";
-
-const PDFStyles = {
-    backgroundColor: '#FF0000',
-    width: '210mm',
-    minHeight: '297mm',
-    marginLeft: '10mm',
-    marginRight: 'auto',
-    marginTop: '15mm'
-}
+import '../styles/pdf.css';
 
 class Home extends Component {
     printDocument() {
+        let scrollPos =  window.scrollY;
+        window.scroll(0,0);
         const input = document.getElementById('divToPrint');
-        html2canvas(input, {scale: "0.75"})
+        html2canvas(input, {scale: "0.9"})
             .then((canvas) => {
                 const imgData = canvas.toDataURL('image/png');
-                const pdf = new jsPDF();
-                pdf.addImage(imgData, 'JPEG', 0, 0);
+                const pdf = new jsPDF({  orientation: 'portrait' });
+                pdf.addImage(imgData, 'png', 0, 0, input.width, input.height);
                 pdf.save("CV Juan Cruz Deccechis.pdf");
             });
+        window.scrollTo(0,scrollPos);
     }
 
     render() {
-        const { theme, language } = this.props;
         return (
             <div className="home">
-                <button onClick={this.printDocument}>Print</button>
+                <button onClick={this.printDocument}>{this.props.language === 'es' ? 'Descargar CV' : 'Download CV' }</button>
                 <div className="container mt4" id="divToPrint">
-                    <Curriculum></Curriculum>
+                    <Curriculum toDownload={this.toDownload}></Curriculum>
                 </div>
             </div>
         );
