@@ -9,10 +9,15 @@ import reducer from "../reducer";
 import '../styles/pdf.css';
 
 class Home extends Component {
+    constructor(props){
+        super(props);
+        this.printDocument = this.printDocument.bind(this);
+    }
+
     printDocument() {
         let scrollPos =  window.scrollY;
         window.scroll(0,0);
-        const input = document.getElementById('divToPrint');
+        const input = document.querySelector('#divToPrint');
         html2canvas(input, {scale: "0.9"})
             .then((canvas) => {
                 const imgData = canvas.toDataURL('image/png');
@@ -28,7 +33,7 @@ class Home extends Component {
             <div className="home">
                 <button onClick={this.printDocument}>{this.props.language === 'es' ? 'Descargar CV' : 'Download CV' }</button>
                 <div className="container mt4" id="divToPrint">
-                    <Curriculum toDownload={this.toDownload}></Curriculum>
+                    <Curriculum></Curriculum>
                 </div>
             </div>
         );

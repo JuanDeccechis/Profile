@@ -6,10 +6,12 @@
     height: 28px;
     align-items: center;
     margin-bottom: 14px;
+    justify-content: flex-end;
 }
 
 .label-switcher{
     padding-right: 10px;
+    width: auto;
 }
 
 .switch {

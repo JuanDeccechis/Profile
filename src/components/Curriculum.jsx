@@ -6,9 +6,9 @@ import Topic from '../components/Topic';
 
 class Curriculum extends Component {
     render() {
-        const { theme, language, toDownload } = this.props;
+        const { theme, language } = this.props;
         return (
-            <div className={`app to-download ${theme}`}>
+            <div className={`app ${theme}`}>
                 <h1>Curriculum Vitae</h1>
                 <div className="cv-presentation">
                     <div className="img img-profile"></div>

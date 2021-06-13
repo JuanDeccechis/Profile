@@ -1,33 +1,47 @@
 import React, { Component } from 'react';
 
 import { LanguageContext } from '../contexts/LanguageContext';
+import '../styles/language.css'
 
 class LanguageChanger extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            language: 'es'
+            selectedLanguage: "es"
         };
-        this.handleChange = this.handleChange.bind(this);
+        this.updateLanguage = this.updateLanguage.bind(this);
     }
-    handleChange(event) {
-        const value = event.target.value;
-        const field = event.target.name;
-        this.setState({ [field]: value });
+
+    updateLanguage(value){
+        this.setState({ selectedLanguage: value });
     }
 
     render() {
+        let languages = [ {
+            "label": "English",
+            "value": "en"
+        }, {
+            "label": "Español",
+            "value": "es"
+        }];
+        let self = this;
         return (
-            <div>
-                <select
-                    value={this.state.language}
-                    onChange={this.handleChange}
-                    name="language"
-                >
-                    <option value="es">Español</option>
-                    <option value="en">English</option>
-                </select>
-                <LanguageContext.Provider value={this.state.language} >
+            <div className="container">
+                <ul className="languages">
+                    {languages.map((elem, index) => {
+                        return (<li key={index}
+                            className={elem.value === self.state.selectedLanguage ? 'languageSelected': ''}
+                            onClick={function () {
+                                self.updateLanguage(elem.value);
+                            }}
+                            key={index}
+                        >
+                            {elem.label}
+                        </li>)
+                    })
+                    }
+                </ul>
+                <LanguageContext.Provider value={this.state.selectedLanguage} >
                     {this.props.children}
                 </LanguageContext.Provider>
             </div>

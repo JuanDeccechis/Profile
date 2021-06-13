@@ -6,7 +6,7 @@ div:not(.img, .user-information), span{
 
 div.app {
   padding: 2% 5%;
-  width: 70%;
+  width: 90%;
   margin: auto;
   background-color: var(--theme-page-background);
   color: var(--theme-page-text);
@@ -30,6 +30,15 @@ h2{
 
 p{
   margin: 0.5rem;
+}
+
+button {
+  background-color: var(--theme-page-icon);
+  border-radius: 100px;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
 }
 
 .user-information{
