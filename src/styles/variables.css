@@ -1,13 +1,18 @@
 .light {
     --theme-color          : #A80000;
-    --theme-page-background: #FFFFFF;
-    --theme-page-text      : #131F33;
+    /*--theme-page-background: #FFFFFF;
+    --theme-cv-background  : #CBC8C2;
+    */--theme-page-background: #CBC8C2;
+    --theme-cv-background  : #FFFFFF;
+    --theme-page-text      : #1A1D21;
     --theme-page-primary   : #0005FF;
 }
-
 .dark {
     --theme-color          : #A80000;
-    --theme-page-background: #131F33;
+    /*--theme-page-background: #1A1D21;
+    --theme-cv-background  : #25282C;
+    */--theme-page-background: #25282C;
+    --theme-cv-background  : #1A1D21;
     --theme-page-text      : #FFFFFF;
     --theme-page-primary   : #BBD0FF;
 }
@@ -15,4 +20,5 @@
 #root {
     --theme-page-block     : #666D7A;
     --theme-page-icon      : #25AE88;
+    --theme-color          : #D5F0E5;
 }

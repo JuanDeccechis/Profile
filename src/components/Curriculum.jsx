@@ -6,9 +6,8 @@ import Topic from '../components/Topic';
 
 class Curriculum extends Component {
     render() {
-        const { theme, language } = this.props;
         return (
-            <div className={`app ${theme}`}>
+            <div className="curriculum">
                 <h1>Curriculum Vitae</h1>
                 <div className="cv-presentation">
                     <div className="img img-profile"></div>

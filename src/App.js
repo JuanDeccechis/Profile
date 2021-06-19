@@ -12,7 +12,7 @@ import ThemeChanger from './components/ThemeChanger';
 class App extends Component {
   render() {
     return (
-      <div className="container">
+      <div className="container asd">
         <LanguageChanger>
           <LanguageContext.Consumer>
             {
@@ -22,7 +22,7 @@ class App extends Component {
                     <ThemeContext.Consumer>
                       {
                         theme => (
-                          <div>
+                          <div className={`app ${theme}`}>
                             <Presentation/>
                             <Home/>
                             <Contact/>

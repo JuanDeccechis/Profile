@@ -5,17 +5,23 @@ div:not(.img, .user-information), span{
 }
 
 div.app {
+  background-color: var(--theme-page-background);
+  color: var(--theme-page-text);
+  padding: 2% 5%;
+  width: 90%;
+}
+
+div.curriculum{
   padding: 2% 5%;
   width: 90%;
   margin: auto;
-  background-color: var(--theme-page-background);
-  color: var(--theme-page-text);
   border-radius: 100px;
+  background-color: var(--theme-cv-background);
+  color: var(--theme-page-text);
 }
 
 html{
   font-family: sans-serif, serif, Arial, Helvetica;
-  padding: 2% 5%;
 }
 
 h1{
@@ -129,4 +135,8 @@ button {
 
 .list-items:nth-child{
   text-align: center;
+}
+
+div.asd{
+  background-color: var(--theme-color);
 }
