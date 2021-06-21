@@ -1,3 +1,5 @@
+@import './variables.css';
+
 #divToPrint{
     width: 90%;
     min-height: 297mm;
@@ -5,7 +7,7 @@
     margin: 0 auto;
 }
 
-@media (min-width: 260mm) {
+@media (min-width: var(--min-screen-width)) {
     #divToPrint{
         width: 210mm;
     }

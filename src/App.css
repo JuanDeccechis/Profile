@@ -98,10 +98,16 @@ button {
   background-image: url("./images/download-white.svg");
 }
 
-.cv-presentation{
+.cv-presentation-complete{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.cv-presentation-simple{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .topic-information{

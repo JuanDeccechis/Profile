@@ -9,9 +9,11 @@ class Curriculum extends Component {
         return (
             <div className="curriculum">
                 <h1>Curriculum Vitae</h1>
-                <div className="cv-presentation">
-                    <div className="img img-profile"></div>
-                    <div className="user-information">
+                <div className={`${this.props.showImage ? "cv-presentation-complete" : "cv-presentation-simple"}`}>
+                    {this.props.showImage &&
+                        <div className="img img-profile"></div>
+                    }
+                    <div className={`user-information`}>
                         <p> JUAN CRUZ DECCECHIS <div className="img short-img img-user inline"></div></p>
                         <p> juandeccechis@gmail.com <div className="img short-img img-mail inline"></div></p>
                         <p> +5492494581833 <div className="img short-img img-phone inline"></div></p>
