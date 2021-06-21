@@ -45,6 +45,7 @@ button {
   padding: 10px 15px;
   text-align: center;
   text-decoration: none;
+  vertical-align: middle;
 }
 
 .user-information{
@@ -93,6 +94,10 @@ button {
   background-image: url("./images/github.svg");
 }
 
+.img-download{
+  background-image: url("./images/download-white.svg");
+}
+
 .cv-presentation{
   display: flex;
   flex-direction: row;
@@ -139,4 +144,21 @@ button {
 
 div.asd{
   background-color: var(--theme-color);
+}
+
+.button-with-icon{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.img-button{
+  margin-left: 0;
+}
+
+.contact{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }

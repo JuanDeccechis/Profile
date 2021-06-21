@@ -5,17 +5,20 @@ class Contact extends Component {
     render() {
         return (
             <div>
-
-            <div className="img short-img img-linkedIn"></div>
-            <div className="img short-img img-github"></div>
-            <ul className="contact">
-                <li>
-                    <ActionLink to="https://github.com/JuanDeccechis" linkText="Github" />
-                </li>
-                <li>
-                    <ActionLink to="https://www.linkedin.com/in/juan-cruz-deccechis-873882177/" linkText="LinkedIn" />
-                </li>
-            </ul>
+                <ul className="contact">
+                    <li>
+                        <button className="button-with-icon" onClick={() => window.open("https://github.com/JuanDeccechis", "_blank")}>
+                            <div className="img short-img img-button img-github inline"></div>
+                            Github
+                        </button>
+                    </li>
+                    <li>
+                        <button className="button-with-icon" onClick={() => window.open("https://www.linkedin.com/in/juan-cruz-deccechis-873882177/", "_blank")}>
+                            <div className="img short-img img-button img-linkedIn inline"></div>
+                            LinkedIn
+                        </button>
+                    </li>
+                </ul>
             </div>
         );
     };

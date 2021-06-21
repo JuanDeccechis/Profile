@@ -2,6 +2,6 @@ color utilizado: #25AE88
 email: "email": https://www.flaticon.es/icono-gratis/email_3515399?term=email&page=1&position=22&page=1&position=22&related_id=3515399&origin=search
 teléfono: "teléfono": https://www.flaticon.es/icono-gratis/llamada-telefonica_901141?term=telefono&page=1&position=31&page=1&position=31&related_id=901141&origin=search
 user: "user": https://www.flaticon.com/free-icon/user_1177568
-github: "github": https://www.flaticon.es/icono-gratis/github_2111432?term=github&related_id=2111432 o el palido https://www.flaticon.es/icono-gratis/github_2111612?term=github&related_id=2111612
-o el editado https://www.flaticon.es/icono-gratis/github_179323 o otro editado mejor https://www.flaticon.es/icono-gratis/logotipo-de-github_25231
+github: "github": https://www.flaticon.es/icono-gratis/github_179323
 linkedin: "linkedin": https://www.flaticon.es/icono-gratis/linkedin_145807?term=linkedin&page=1&position=5&page=1&position=5&related_id=145807&origin=search
+download: "download": https://www.flaticon.com/free-icon/button_2810413?term=download&page=2&position=30&page=2&position=30&related_id=2810413&origin=search

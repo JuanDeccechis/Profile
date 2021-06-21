@@ -31,7 +31,9 @@ class Home extends Component {
     render() {
         return (
             <div className="home">
-                <button onClick={this.printDocument}>{this.props.language === 'es' ? 'Descargar CV' : 'Download CV' }</button>
+                <button className="button-with-icon" onClick={this.printDocument}>
+                <div className="img short-img img-button img-download inline"></div>
+                    {this.props.language === 'es' ? 'Descargar CV' : 'Download CV' }</button>
                 <div className="container mt4" id="divToPrint">
                     <Curriculum></Curriculum>
                 </div>
