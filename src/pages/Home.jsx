@@ -46,7 +46,7 @@ class Home extends Component {
 
     render() {
         return (
-            <div className="home">
+            <div className="page">
                 {this.state.width >= 990 &&
                     <button className="button-with-icon" onClick={this.printDocument}>
                     <div className="img short-img img-button img-download inline"></div>

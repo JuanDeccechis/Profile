@@ -8,4 +8,9 @@ a {
 
 .active {
     color: var(--theme-page-icon);
+    border-bottom: 3px solid var(--theme-page-icon);
+}
+
+.navbar{
+    border-top: 3px solid var(--theme-page-text);
 }

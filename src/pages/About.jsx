@@ -26,10 +26,17 @@ class About extends Component {
     }
 
     render() {
+        const { theme, language } = this.props;
         return (
-            <div className="home">
-                About
-            </div>
+            language === 'es' ? (
+                <div className="page">
+                    <p>Me gusta viajar, conocer lugares nuevos, pasar tiempo con amigos, ver sagas de peliculas y ver stand up.</p>
+                </div>
+            ) : (
+                <div className="page">
+                    <p>I like traveling, seeing new places, spending time with my friends, watching movies sagas, and watching stand up.</p>
+                </div>
+            )
         );
     };
 }

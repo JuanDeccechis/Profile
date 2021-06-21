@@ -168,3 +168,12 @@ div.asd{
   flex-direction: row;
   justify-content: space-around;
 }
+
+.page{
+  border-top: 3px solid var(--theme-page-text);
+  padding-top: 26px;
+}
+
+.presentation{
+  padding-bottom: 26px;
+}
