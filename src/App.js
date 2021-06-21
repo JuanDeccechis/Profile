@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Contact from './components/Contact';
-import Home from './pages/Home';
 import Presentation from './components/Presentation';
 import './App.css';
 
@@ -8,6 +7,7 @@ import { LanguageContext } from './contexts/LanguageContext';
 import { ThemeContext } from './contexts/ThemeContext';
 import LanguageChanger from './components/LanguageChanger';
 import ThemeChanger from './components/ThemeChanger';
+import Navbar from './components/Navbar';
 
 class App extends Component {
   render() {
@@ -24,7 +24,7 @@ class App extends Component {
                         theme => (
                           <div className={`app ${theme}`}>
                             <Presentation/>
-                            <Home/>
+                            <Navbar></Navbar>
                             <Contact/>
                           </div>
                         )

@@ -1,0 +1,11 @@
+@import './variables.css';
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--theme-page-text);
+}
+
+.active {
+    color: var(--theme-page-icon);
+}
