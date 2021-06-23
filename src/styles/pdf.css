@@ -7,7 +7,7 @@
     margin: 0 auto;
 }
 
-@media (min-width: var(--min-screen-width)) {
+@media (min-width: 260mm) {
     #divToPrint{
         width: 210mm;
     }
