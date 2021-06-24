@@ -5,6 +5,9 @@ class Contact extends Component {
     render() {
         return (
             <div>
+                <p className="inline">
+                    Para mas información pueden visitar mis perfiles:
+                </p>
                 <ul className="contact">
                     <li>
                         <button className="button-with-icon" onClick={() => window.open("https://github.com/JuanDeccechis", "_blank")}>

@@ -22,7 +22,7 @@ class ThemeChanger extends Component {
         return (
             <div>
                 <div className="container-switcher">
-                    <span className="label-switcher">{this.props.language === 'es' ? 'modo nocturno' : 'dark mode' }: </span>
+                    <span className="label-switcher">{this.props.language === 'es' ? 'Modo nocturno' : 'Dark mode' }: </span>
                     <label class="switch">
                         <input type="checkbox" checked={this.state.switchDark} onChange={this.handleSwitch} />
                         <span class="slider round"></span>

@@ -48,9 +48,11 @@ class Home extends Component {
         return (
             <div className="page">
                 {this.state.width >= 990 &&
-                    <button className="button-with-icon" onClick={this.printDocument}>
-                    <div className="img short-img img-button img-download inline"></div>
-                        {this.props.language === 'es' ? 'Descargar CV' : 'Download CV' }</button>
+                    <div className="alineation">
+                        <button className="button-with-icon" onClick={this.printDocument}>
+                        <div className="img short-img img-button img-download inline"></div>
+                            {this.props.language === 'es' ? 'Descargar CV' : 'Download CV' }</button>
+                    </div>
                 }
                 <div className="container mt4" id="divToPrint">
                     <Curriculum showImage={this.state.width >= 990}></Curriculum>
