@@ -6,6 +6,7 @@ import Topic from '../components/Topic';
 
 class Curriculum extends Component {
     render() {
+        const { language } = this.props;
         return (
             <div className="curriculum">
                 <h1>Curriculum Vitae</h1>
@@ -19,20 +20,41 @@ class Curriculum extends Component {
                         <p> +5492494581833 <div className="img short-img img-phone inline"></div></p>
                     </div>
                 </div>
-                <Topic title="Experiencia Profesional" since="2019" until="Presente" employer="Technisys" rol="SSR Fullstack Developer - JAVA REACT" moreInfo="Desarrollo de aplicaciones bancarias web/mobile"></Topic>
-                <Topic since="2018" until="2021" employer="Universidad Nacional del Centro de la Provincia de Buenos Aires" rol="Ayudante alumno Web 1 - Investigacion Operativa" moreInfo=""></Topic>
-                <Topic title="Estudios" since="2012" until="2019" employer="Universidad Nacional del Centro de la Provincia de Buenos Aires" rol="Ingeniería de Sistemas" moreInfo="Estado: Finalizado"></Topic>
-                <Topic since="2018" until="Presente" employer="Universidad Nacional del Centro de la Provincia de Buenos Aires" rol="Tecnicatura Universitaria en Desarrollo de Aplicaciones Informáticas" moreInfo="Estado: 90%"></Topic>
-                <Topic title="Inglés" rol="Nivel: Intermedio"></Topic>
-                <Topic title="Aptitudes" rol="Proactivo, Responsable, Trabajo en equipo"></Topic>
-                <Topic title="Conocimientos"></Topic>
-                <div className="list-items">
-                    <Topic rol="React - TS - JS "></Topic>
-                    <Topic rol="SASS - CSS3 - CSS "></Topic>
-                    <Topic rol="HTML5 - HTML "></Topic>
-                    <Topic rol="JAVA "></Topic>
-                    <Topic rol="BD Oracle SQL"></Topic>
-                </div>
+                {language === 'es' ?
+                    <div>
+                        <Topic title="Experiencia Profesional" since="2019" until="Presente" employer="Technisys" rol="SSR Fullstack Developer - JAVA REACT" moreInfo="Desarrollo de aplicaciones bancarias web/mobile"></Topic>
+                        <Topic since="2018" until="2021" employer="Universidad Nacional del Centro de la Provincia de Buenos Aires" rol="Ayudante alumno Web 1 - Investigacion Operativa" moreInfo=""></Topic>
+                        <Topic title="Estudios" since="2012" until="2019" employer="Universidad Nacional del Centro de la Provincia de Buenos Aires" rol="Ingeniería de Sistemas" moreInfo="Estado: Finalizado"></Topic>
+                        <Topic since="2018" until="Presente" employer="Universidad Nacional del Centro de la Provincia de Buenos Aires" rol="Tecnicatura Universitaria en Desarrollo de Aplicaciones Informáticas" moreInfo="Estado: 90%"></Topic>
+                        <Topic title="Inglés" rol="Nivel: Intermedio"></Topic>
+                        <Topic title="Aptitudes" rol="Proactivo, Responsable, Trabajo en equipo"></Topic>
+                        <Topic title="Conocimientos"></Topic>
+                        <div className="list-items">
+                            <Topic rol="React - TS - JS "></Topic>
+                            <Topic rol="SASS - CSS3 - CSS "></Topic>
+                            <Topic rol="HTML5 - HTML "></Topic>
+                            <Topic rol="JAVA "></Topic>
+                            <Topic rol="BD Oracle SQL"></Topic>
+                        </div>
+                    </div>
+                :
+                    <div>
+                        <Topic title="Job experience" since="2019" until="Today" employer="Technisys" rol="SSR Fullstack Developer - JAVA REACT" moreInfo="work with banking apps web/mobile"></Topic>
+                        <Topic since="2018" until="2021" employer="Universidad Nacional del Centro de la Provincia de Buenos Aires" rol="Ayudante alumno Web 1 - Investigacion Operativa" moreInfo=""></Topic>
+                        <Topic title="Education" since="2012" until="2019" employer="Universidad Nacional del Centro de la Provincia de Buenos Aires" rol="Ingeniería de Sistemas" moreInfo="Status: Finished"></Topic>
+                        <Topic since="2018" until="Presente" employer="Universidad Nacional del Centro de la Provincia de Buenos Aires" rol="Tecnicatura Universitaria en Desarrollo de Aplicaciones Informáticas" moreInfo="Status: 90%"></Topic>
+                        <Topic title="English" rol="Level: Intermediate"></Topic>
+                        <Topic title="Aptitudes" rol="Proactive, Responsability, Team work"></Topic>
+                        <Topic title="Knowledges"></Topic>
+                        <div className="list-items">
+                            <Topic rol="React - TS - JS "></Topic>
+                            <Topic rol="SASS - CSS3 - CSS "></Topic>
+                            <Topic rol="HTML5 - HTML "></Topic>
+                            <Topic rol="JAVA "></Topic>
+                            <Topic rol="BD Oracle SQL"></Topic>
+                        </div>
+                    </div>
+                }
             </div>
 
 

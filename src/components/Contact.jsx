@@ -1,13 +1,21 @@
 import React, { Component } from "react";
-import ActionLink from './ActionLink'
+import { withTheme } from '../contexts/ThemeContext';
+import { withLanguage } from '../contexts/LanguageContext';
 
 class Contact extends Component {
     render() {
+        const { language } = this.props;
         return (
             <div>
-                <p className="inline">
-                    Para mas información pueden visitar mis perfiles:
-                </p>
+                {language === 'es' ?
+                    <p className="inline">
+                        Para mas información pueden visitar mis perfiles:
+                    </p>
+                :
+                    <p className="inline">
+                        For more information, you can go to my profiles:
+                    </p>
+                }
                 <ul className="contact">
                     <li>
                         <button className="button-with-icon" onClick={() => window.open("https://github.com/JuanDeccechis", "_blank")}>
@@ -27,4 +35,4 @@ class Contact extends Component {
     };
 }
 
-export default Contact;
+export default withLanguage(withTheme(Contact));

@@ -15,7 +15,7 @@ class References extends Component {
         const { name, rol, contactPhone } = this.props;
         return (
             <div className="reference-spaces">
-                <p>{name} - {rol}</p>
+                <p>{name} - <b>{rol}</b></p>
                 <p> {contactPhone} <div className="img short-img img-phone inline"></div></p>
             </div>
         );
