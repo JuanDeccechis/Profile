@@ -31,26 +31,28 @@ class About extends Component {
             <div className="page">
                 {language === 'es' ? (
                     <div>
-                        <p>Me gusta viajar, conocer lugares nuevos, pasar tiempo con amigos, ver sagas de peliculas y ver stand up.</p>
+                        <p>Me gusta viajar, conocer lugares nuevos, pasar tiempo con amigos y ver stand up.</p>
                         <p>Mis referentes son:</p>
                         <div className="references">
-                            <References name="Sebastian Colavita" rol="PM"></References>
-                            <References name="Gerardo Gonzalez Durá" rol="PM"></References>
-                            <References name="Sebastian Bisbal" rol="TL"></References>
-                            <References name="Andrea Toyos" rol="TL"></References>
-                            <References name="Rodrigo Pena" rol="Dev - Mentor"></References>
+                            <References name="Sebastian Colavita" rol="PM" contactPhone="+549249 4696234"></References>
+                            <References name="Gerardo Gonzalez Durá" rol="PM" contactPhone="+59894 407270"></References>
+                            <References name="Sebastian Bisbal" rol="TL" contactPhone="+549249 4509773"></References>
+                            <References name="Andrea Toyos" rol="TL" contactPhone="+549249 4209036"></References>
+                            <References name="Rodrigo Pena" rol="Dev - Mentor" contactPhone="+549249 4476194"></References>
+                            <References name="Cristian Oses" rol="Dev" contactPhone="+549249 4683292"></References>
                         </div>
                     </div>
                 ) : (
                     <div>
-                        <p>I like traveling, seeing new places, spending time with my friends, watching movies sagas, and watching stand up.</p>
+                        <p>I like traveling, seeing new places, spending time with my friends and watching stand up.</p>
                         <p>My referents are:</p>
                         <div className="references">
-                            <References name="Sebastian Colavita" rol="PM"></References>
-                            <References name="Gerardo Gonzalez Durá" rol="PM"></References>
-                            <References name="Sebastian Bisbal" rol="TL"></References>
-                            <References name="Andrea Toyos" rol="TL"></References>
-                            <References name="Rodrigo Pena" rol="Dev - Mentor"></References>
+                            <References name="Sebastian Colavita" rol="PM" contactPhone="+549249 4696234"></References>
+                            <References name="Gerardo Gonzalez Durá" rol="PM" contactPhone="+59894 407270"></References>
+                            <References name="Sebastian Bisbal" rol="TL" contactPhone="+549249 4509773"></References>
+                            <References name="Andrea Toyos" rol="TL" contactPhone="+549249 4209036"></References>
+                            <References name="Rodrigo Pena" rol="Dev - Mentor" contactPhone="+549249 4476194"></References>
+                            <References name="Cristian Oses" rol="Dev" contactPhone="+549249 4683292"></References>
                         </div>
                     </div>
                 )}

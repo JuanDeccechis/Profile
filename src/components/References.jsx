@@ -12,10 +12,11 @@ class References extends Component {
      }
 
     render() {
-        const { name, rol } = this.props;
+        const { name, rol, contactPhone } = this.props;
         return (
             <div className="reference-spaces">
-                {name} - {rol}
+                <p>{name} - {rol}</p>
+                <p> {contactPhone} <div className="img short-img img-phone inline"></div></p>
             </div>
         );
     };

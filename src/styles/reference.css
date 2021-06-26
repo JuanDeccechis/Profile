@@ -1,3 +1,9 @@
-.reference-spaces{
+@import './variables.css';
+
+div.reference-spaces{
     padding: 10px;
+    margin: 10px;
+    border: 2px solid var(--theme-page-text);
+    border-radius: 100px;
+    width: auto;
 }
