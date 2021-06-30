@@ -20,7 +20,7 @@ class Presentation extends Component {
                     <h1>Welcome to my profile!</h1>
                     <div className="presentation">
                         <p>I'm <b>Juan Cruz Deccechis</b>, a semi senior fullstack developer, as you can see in my CV.</p>
-                        <p>I did this app to show my knoleadges, and to give you a little more information that you can see in a CV.</p>
+                        <p>I have developed this app to show my knoleadge and to give you further information from what you can see in the CV.</p>
                     </div>
                 </div>
             )

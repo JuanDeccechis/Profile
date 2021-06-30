@@ -44,8 +44,8 @@ class Curriculum extends Component {
                         <Topic title="Education" since="2012" until="2019" employer="Universidad Nacional del Centro de la Provincia de Buenos Aires" rol="Ingeniería de Sistemas" moreInfo="Status: Finished"></Topic>
                         <Topic since="2018" until="Presente" employer="Universidad Nacional del Centro de la Provincia de Buenos Aires" rol="Tecnicatura Universitaria en Desarrollo de Aplicaciones Informáticas" moreInfo="Status: 90%"></Topic>
                         <Topic title="English" rol="Level: Intermediate"></Topic>
-                        <Topic title="Aptitudes" rol="Proactive, Responsability, Team work"></Topic>
-                        <Topic title="Knowledges"></Topic>
+                        <Topic title="Skills" rol="Proactive, Responsible, Team work"></Topic>
+                        <Topic title="Professional skills"></Topic>
                         <div className="list-items">
                             <Topic rol="React - TS - JS "></Topic>
                             <Topic rol="SASS - CSS3 - CSS "></Topic>
