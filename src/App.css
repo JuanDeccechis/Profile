@@ -32,7 +32,7 @@ h1{
 h2{
   text-decoration: underline;
   margin: 0;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 p{
@@ -88,7 +88,7 @@ button {
 }
 
 .img-linkedIn{
-  background-image: url("./images/linkedIn.svg");
+  background-image: url("./images/linkedin.svg");
 }
 
 .img-github{
@@ -115,14 +115,14 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 20px;
+  padding-top: 14px;
 }
 
 .topic-information span{
   text-align: center;
 }
 
-.short-column{
+div.short-column{
   width: 30%;
   border-bottom: 2px solid var(--theme-page-block);
   display: flex;

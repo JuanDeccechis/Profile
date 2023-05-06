@@ -1,17 +1,12 @@
 .light {
-    --theme-color          : #A80000;
-    /*--theme-page-background: #FFFFFF;
-    --theme-cv-background  : #CBC8C2;
-    */--theme-page-background: #CBC8C2;
-    --theme-cv-background  : #FFFFFF;
+    --theme-page-background: #CBC8C2;
+/*    --theme-cv-background  : #FFFFFF;   */
+    --theme-cv-background  : #D5F0E5;
     --theme-page-text      : #1A1D21;
     --theme-page-primary   : #0005FF;
 }
 .dark {
-    --theme-color          : #A80000;
-    /*--theme-page-background: #1A1D21;
-    --theme-cv-background  : #25282C;
-    */--theme-page-background: #25282C;
+    --theme-page-background: #25282C;
     --theme-cv-background  : #1A1D21;
     --theme-page-text      : #FFFFFF;
     --theme-page-primary   : #BBD0FF;

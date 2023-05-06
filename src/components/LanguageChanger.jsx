@@ -34,7 +34,6 @@ class LanguageChanger extends Component {
                             onClick={function () {
                                 self.updateLanguage(elem.value);
                             }}
-                            key={index}
                         >
                             {elem.label}
                         </li>)
