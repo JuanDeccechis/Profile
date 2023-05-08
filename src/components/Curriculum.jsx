@@ -44,7 +44,8 @@ class Curriculum extends Component {
                             <Topic title="Proyectos" rol="Desarrollo de aplicaciones bancarias web/mobile - flujos nuevos y mantenimiento"></Topic>
                             <div>
                                 <Topic title="Tecnologías" rol="Java v8 - v11 - React v15 - plugin cordova (MB)"></Topic>
-                                <Topic title="Forma de trabajo" rol="Scrum - Github"></Topic>
+                                <Topic title="Auto aprendizaje" rol="React Hooks - Jest (testing)"></Topic>
+                                <Topic title="Herramientas de trabajo" rol="Scrum - Github"></Topic>
                             </div>
                         </div>
                     </div>
@@ -71,6 +72,7 @@ class Curriculum extends Component {
                             <Topic title="Proyects" rol="Web/mobile banking apps - maintenance and new features"></Topic>
                             <div>
                                 <Topic title="Tecnologies" rol="Java v8 - v11 - React v15 - plugin cordova (MB)"></Topic>
+                                <Topic title="Self learning" rol="React Hooks - Jest (testing)"></Topic>
                                 <Topic title="Job tools" rol="Scrum - Github"></Topic>
                             </div>
                         </div>
