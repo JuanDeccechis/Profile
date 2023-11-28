@@ -37,6 +37,7 @@ class Curriculum extends Component {
                             <Topic rol="HTML5 - HTML "></Topic>
                         */}
                             <Topic rol="Microservicios "></Topic>
+                            <Topic rol="Docker "></Topic>
                             <Topic rol="Java "></Topic>
                             <Topic rol="BD Oracle SQL"></Topic>
                         </div>
@@ -44,7 +45,7 @@ class Curriculum extends Component {
                             <Topic title="Proyectos" rol="Desarrollo de aplicaciones bancarias web/mobile - flujos nuevos y mantenimiento"></Topic>
                             <div>
                                 <Topic title="Tecnologías" rol="Java v8 - v11 - React v15 - plugin cordova (MB)"></Topic>
-                                <Topic title="Auto aprendizaje" rol="React Hooks - Jest (testing)"></Topic>
+                                <Topic title="Auto aprendizaje" rol="React Hooks - Jest (testing) - Typescript"></Topic>
                                 <Topic title="Herramientas de trabajo" rol="Scrum - Github"></Topic>
                             </div>
                         </div>
