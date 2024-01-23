@@ -22,8 +22,11 @@ class Curriculum extends Component {
                 </div>
                 {language === 'es' ?
                     <div>
-                        <Topic title="Experiencia Profesional" since="2019" until="Presente" employer="Technisys" rol="SSR Fullstack Developer - JAVA REACT" moreInfo="Desarrollo de aplicaciones bancarias web/mobile"></Topic>
+                        <Topic title="Experiencia Profesional" since="2024" until="Presente" employer="Vates" rol="SSR Java Developer" moreInfo="Desarrollo de aplicaciones de comunicaciones"></Topic>
+                        <Topic since="2019" until="2023" employer="Technisys" rol="SSR Fullstack Developer - JAVA REACT" moreInfo="Desarrollo de aplicaciones bancarias web/mobile"></Topic>
+                        {/*
                         <Topic since="2018" until="2021" employer="Universidad Nacional del Centro de la Provincia de Buenos Aires" rol="Ayudante alumno Web 1 - Investigacion Operativa" moreInfo=""></Topic>
+                        */}
                         <Topic title="Estudios" since="2012" until="2019" employer="Universidad Nacional del Centro de la Provincia de Buenos Aires" rol="Ingeniería de Sistemas" moreInfo="Estado: Finalizado"></Topic>
                         <Topic since="2018" until="2022" employer="Universidad Nacional del Centro de la Provincia de Buenos Aires" rol="Tecnicatura Universitaria en Desarrollo de Aplicaciones Informáticas" moreInfo="Estado: 90%"></Topic>
                         <Topic title="Inglés" rol="Nivel: Intermedio"></Topic>
@@ -42,9 +45,9 @@ class Curriculum extends Component {
                             <Topic rol="BD Oracle SQL"></Topic>
                         </div>
                         <div className="details">
-                            <Topic title="Proyectos" rol="Desarrollo de aplicaciones bancarias web/mobile - flujos nuevos y mantenimiento"></Topic>
+                            <Topic title="Proyectos" rol="Desarrollo de aplicaciones bancarias y comunicaciones, flujos nuevos y mantenimiento"></Topic>
                             <div>
-                                <Topic title="Tecnologías" rol="Java v8 - v11 - React v15 - plugin cordova (MB)"></Topic>
+                                <Topic title="Tecnologías" rol="Java v8 - v11 - v17 - React v15 - plugin cordova (MB)"></Topic>
                                 <Topic title="Auto aprendizaje" rol="React Hooks - Jest (testing) - Typescript"></Topic>
                                 <Topic title="Herramientas de trabajo" rol="Scrum - Github"></Topic>
                             </div>
